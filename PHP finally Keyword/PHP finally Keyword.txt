@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Starting the process.";
+try {
+  // Select randomly between 0 and 1, throw an exception if 1 is selected.
+  $random = rand(0, 1);
+  if($random == 1) {
+    throw new Exception("Exception");
+  }
+} finally {
+  echo "Process complete";
+}
+?>
+
+</body>
+</html>
+
+
+
+
+
+
+
+Starting the process.Process complete
